@@ -1,0 +1,51 @@
+.main{
+    height: 690px;
+}
+.image{
+    width: 29%;
+
+}
+.content{
+    width: 71%;
+    background-color: rgb(27, 28, 28);
+    position: relative;
+    left: 432px;
+    bottom: 780px;
+    height: 735px;
+
+}
+
+.text_color{
+   color: rgb(3, 201, 133)
+}
+#h1-text
+{
+    color: #fff;
+    left: 20px;
+}
+.p-text
+{
+    color: rgb(113, 114, 113);
+}
+.td-text{
+    color: #fff;
+}
+#h5-text{
+    color: #fff;
+    font-size: 18px;
+}
+.content-2{
+    height: 340px;
+}
+.services-1{
+
+    width: 50%;
+    position: relative;
+    left: 40px;
+}
+.services-2{
+    width: 50%;
+    position: relative;
+    left: 500px;
+    bottom: 305px;
+}
