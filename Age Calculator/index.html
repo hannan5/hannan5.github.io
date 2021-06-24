@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<script src="./script.js"></script>
+
+<body class="body">
+
+    <h1 class="main_h1"> Age <span> Calculator </span></h1>
+    <div class="col-12 col-md-12">
+        <div class="main">
+            <label class="date">
+                <h6>Date Of Birth</h6>
+                <input type="number" name="date" placeholder="Date" id="date_field">
+            </label><br><br>
+            <label class="Month">
+                <h6>Date Of Month</h6>
+                <select name="months" id="month_field">
+                    <option selected="">Months</option>
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="aprail">Aprail</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="octuber">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+            </label><br><br>
+            <label class="year">
+                <h6>Date Of Year</h6>
+                <input type="number" name="Year" placeholder="Year" id="year_field">
+            </label><br><br>
+            <div class="submit">
+                <button type="submit" name="calculate" onclick="calculate_age()"> Calculate </button>
+                <button type="reset" name="reset"> Reset </button>
+            </div>
+            <!-- <h7>Your Age is</h7> -->
+            <div class="age">
+                <p id="p-1">Years &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; Months &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Days</p>
+                <!-- <p id="output"> &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; 00 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 00 </p> -->
+                <div class="output">
+                <div class="year_output"><h6 id="year_output_h6"></h6></div>
+                <div class="month_output"><h6 id="month_output_h6"></h6></div>
+                <div class="days_output"><h6 id="days_output_h6"></h6></div>
+            </div>
+                
+                
+                
+                
+                <!-- <div class="age-1">Year <br> 00 </div>
+                <div class="age-2">Year <br> 00 </div>
+                <div class="age-3">Year <br> 00 </div> -->
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

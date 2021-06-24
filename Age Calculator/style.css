@@ -1,0 +1,106 @@
+.body{
+    background-color: #191819;
+}
+.main_h1{
+    text-align: center;
+    color: #40c0f8;
+}
+.main_h1 span{
+    color: #60e880;
+}
+label h6{
+    text-align: left;
+    color: #40c0f8;
+    font-size: 17px;
+}
+label input{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #191819;
+    border:1.5px solid #abb0abff;
+    box-shadow:0px 4px	#484848;
+    color: #fff;
+}
+label select{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #191819;
+    border:1.5px solid #abb0abff;
+    box-shadow:0px 4px	#484848;
+    color: #fff;
+}
+
+/* label option{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #191819;
+    border:1.5px solid #abb0abff;
+    box-shadow:0px 4px	#484848;
+} */
+
+.main{
+    margin: 80px auto;
+    text-align: center;
+}
+.submit button{
+    width: 100px;
+    height: 30px;
+    border-radius:10px;
+    background-color: #191819;
+    color: #fff;
+    margin: 20px;
+}
+.age{
+    width: 300px;
+    height: 90px;
+    background-color: #000;
+    /* text-align: center; */
+    margin: 15px auto;
+    /* margin-top: 10px; */
+    border-radius: 10px;
+    border: 6px solid #696969;
+    /* border-inline-end-color: #696969; */
+    /* border-block-end-color: #696969; */
+
+}
+h7{
+/* text-align: left; */
+color: #60e880;
+font-size: 17px;
+}
+
+.age #p-1{
+    color: #60e880;
+    padding-top: 5px;
+}
+
+.output{
+    /* position: absolute; */
+    display: inline-block;
+}
+.year_output{
+    display: inline-block;
+    padding-right: 73px;
+}
+#year_output_h6{
+    color: #fff;
+font-size: 15px;
+}
+.month_output{
+    display: inline-block;
+    padding-right: 56px;
+}
+#month_output_h6{
+    color: #fff;
+font-size: 15px;
+}
+.days_output{
+    display: inline-block;
+}
+#days_output_h6{
+    color: #fff;
+font-size: 15px;
+}
