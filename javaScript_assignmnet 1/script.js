@@ -35,7 +35,6 @@
 // console.log(allitems);
 
 
-// Qno2
 
 // var obj = {
 //     name: "Hannan",
@@ -59,8 +58,8 @@
 //         this.lastName = last;
 //         this.age = age;
 //         this.country = country;
-//     }
-//     // Qno3
+//
+    //  }
     
 //     var Amir = new People("Amir", "Asif", 20, "Pakistan");
 //     var farooq = new People("Farooq", "Naeem", 22, "Pakistan");
@@ -70,7 +69,6 @@
 //     console.log(Rafay);
     
     
-    // Qno 4
     
     function Area(name, gender, address, education, profession) {
         this.name = name;
