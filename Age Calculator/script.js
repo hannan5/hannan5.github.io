@@ -106,7 +106,7 @@ console.log(Year);
 document.getElementById('year_output_h6').innerHTML = Math.floor(final_year);
 document.getElementById('month_output_h6').innerHTML = Math.floor(Math.abs(new_month));
 document.getElementById('days_output_h6').innerHTML = Math.floor(Math.abs(new_date));
-
+document.getElementById('reset').innerHTML = " "
 
 
 
