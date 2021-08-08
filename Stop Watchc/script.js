@@ -19,10 +19,10 @@ window.onload = function(){
     }
 
     buttonStop.onclick = function(){
-        // clearInterval(intervel);
+        clearInterval(intervel);
     }
     buttonReset.onclick = function(){
-        // clearInterval(intervel);
+        clearInterval(intervel);
         min = '00';
         tens = '00';
         seconds = '00';
