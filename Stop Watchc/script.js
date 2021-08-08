@@ -14,7 +14,7 @@ window.onload = function(){
     var intervel;
 
     buttonStart.onclick = function(){
-        // clearInterval(intervel);
+        clearInterval(intervel);
         intervel = setInterval(startTimer, 10);
     }
 
