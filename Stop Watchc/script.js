@@ -14,15 +14,15 @@ window.onload = function(){
     var intervel;
 
     buttonStart.onclick = function(){
-        clearInterval(intervel);
+        // clearInterval(intervel);
         intervel = setInterval(startTimer, 10);
     }
 
     buttonStop.onclick = function(){
-        clearInterval(intervel);
+        // clearInterval(intervel);
     }
     buttonReset.onclick = function(){
-        clearInterval(intervel);
+        // clearInterval(intervel);
         min = '00';
         tens = '00';
         seconds = '00';
