@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(./images/screenshot.jpg);
+}
+.create_team{
+    background:rgba(0,0,0,0.2);
+    width: 60%;
+    height: 450px;
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+.create_team h2{
+    padding-top: 15px;
+    color: #fff;
+}
+#add-team{
+    width: 60px;
+    height: 40px;
+    border-radius: 9px;
+    position: relative;
+    bottom: -340px;
+    /* right: 321px; */
+    /* Border-radius: 6px; */
+    left: 370px;
+    background: #b6d2b549;
+}
+
+#add-team h6{
+    font-size: 26px;
+}
+.create_form{
+    /* background-color: aqua;
+    display: flex; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    left: 27%;
+}
+.form-header h3{
+font-size: 20px;
+}
+.form-content{
+    padding-top: 50px;
+    padding: 50px 20px 23px;
+    display: block;
+
+}
+.select_input{
+    padding-top: 25px;
+}
+.select_input select{
+    width: 100%;
+    padding-top: 10px;
+    height: 40px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+#add-member{
+font-size: 20px;
+}
+#memberUl{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#memberLi-li{
+    border: 1px solid #ced4da;
+    border-radius: 7px;
+    padding: 5px 13px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+.form{
+    display: none;
+}
+/* Form-button submit button */
+#createBtn{
+    height: 35px;
+    width: 80px;
+    position: relative;
+    left: 38%;
+    top: 10px;
+}
+
+/* <!-- Team Info Box --> */
+
+#teambox{
+    background: none;
+}
+#teambox:hover{
+    border-color:#fff ;
+}
+#teambox h5{
+    padding-top: 10px;
+    text-align: left;
+    padding-left: 20px;
+    color: #fff;
+    font-size: 25px;
+}
+#teambox h6{
+    text-align: left;
+    padding-left: 20px;
+    color: #fff;
+    padding-top: 8px;
+}
+
+#teambox #details{
+    width: 100px;
+    height: 35px;
+    /* left: 26px; */
+    /* margin-left: 11px;
+    margin-top: 3px; */
+    margin: 16px;
+    border: none;
+    background: #b6d2b549;
+    color: #fff;
+    font-size: 18px;
+}
+

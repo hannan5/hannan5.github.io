@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" a href="./signup.css">
+</head>
+<body>
+    <div class="sign-up">
+        <div class="form">
+            <h2> Create A New Account</h2>
+            <form class="login-form">
+                <div class="input">
+                    <div>
+                        <!-- <h5>Password:</h5> -->
+                        <br>
+                        <input type="text" placeholder="Enter Name" id="name">
+                    </div>
+                <div>
+                   <!-- <h5> Email* </h5> -->
+                    <br>
+                    <input type="email" placeholder="Enter Email" id="email">
+                </div>
+                <div>
+                    <!-- <h5>Password:</h5> -->
+                    <br>
+                    <input type="password" placeholder="Enter Password" id="password">
+                </div>
+                <button type="submit" id="signup-btn" onclick="signup()"> Sign Up </button>
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <script>
+        function UserInput(name,email,password,createdTeam,userKey){
+            this.name = name;
+            this.email = email;
+            this.password = password;
+            this.createdTeam = createdTeam;
+            this.userKey = userKey;
+        }
+
+
+function signup() {
+            // let id = 1;
+            let signupStorage = [];
+
+           let name1 = document.getElementById('name');
+           let email1 = document.getElementById('email');
+           let password1 = document.getElementById('password');
+
+        //    localStorage.setItem("name1",name);
+        //    localStorage.setItem("email1",email);
+        //    localStorage.setItem("password1",password);
+        // var login = JSON.parse(localStorage.getItem('user'));
+
+let getdata = localStorage.getItem('login');
+login = (getdata) ? JSON.parse(getdata) : [];
+login.map((sign_up)=> { 
+    signupStorage.push(sign_up);
+    
+})
+        let signupConst = new UserInput(name1.value,email1.value,password1.value,[],new Date().getTime());
+        signupStorage.push(signupConst);
+        localStorage.setItem('login', JSON.stringify(signupStorage));
+
+        }
+
+    </script>
+
+
+
+</body>
+<!-- <script>
+    function signup() {
+       let name = document.getElementById('name').value;
+       let email = document.getElementById('email').value;
+       let password = document.getElementById('password').value;
+
+       localStorage.getItem("name1",name);
+       localStorage.getItem("email1",email);
+       localStorage.getItem("password1",password);
+
+    }
+</script> -->
+
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" a href="./style.css">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <!-- <button id="login-change"> Login </button>
+            <button id="signup-change"> Sign Up </button> -->
+
+            <h2> Login Account </h2>
+            <form class="login-form">
+                <div class="input">
+                    <div>
+                        <!-- <h5> Email* </h5> -->
+                        <br>
+                        <input type="email" placeholder="Enter Email" id="email">
+                    </div>
+                    <div>
+                        <!-- <h5>Password:</h5> -->
+                        <br>
+                        <input type="password" placeholder="Enter Password" id="password">
+                    </div>
+                    <button type="button" id="login-btn" onclick="login()"> Login </button>
+                </div>
+
+                <div class="bottom-line">
+                    <p>Create a new account <a href="signup.html"> Sign Up </a> here </p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function login() {
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+
+        var login = localStorage.getItem('login');
+        // var password1 = localStorage.getItem('password1');
+
+        // var login = JSON.parse(localStorage.getItem('user'));
+        let flag = false;
+        login = (login) ? JSON.parse(login) : [];
+        login.map((sign_up, index) => {
+            // signupStorage.push(sign_up);
+            // console.log(sign_up)
+            if (sign_up.email == email && sign_up.password == password) {
+
+                localStorage.setItem('currentUser',JSON.stringify(login[index]))
+                flag = true;
+                return false;
+                // window.location.href = ''
+            }
+
+        });
+        if (flag) {
+            // console.log('Your are logged in');
+            window.location.href = 'teams_create.html'
+        }
+        else {
+            alert('Email and Password is incorrect');
+        }
+
+    }
+
+
+</script>
+
+</html>

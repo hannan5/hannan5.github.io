@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap css link  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" a href="./teams_create.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="create_team">
+            <h2> Teams You Own </h2>
+            <!-- <hr> -->
+            <!--create button start-->
+            <!-- <div class="button"> -->
+            <button type="button" id="add-team" onclick="popform()" ;>
+                <!-- <button type="button" id="add-team" a hre data-rel="popup" data-transition="pop"> -->
+
+                <h6> + </h6>
+            </button>
+            <!--create button end-->
+
+            <!-- </div> -->
+            <div class="container">
+                <div class="form" id="form-call">
+                    <div class="create_form">
+                        <div class="form-header">
+                            <h3> Create New Team </h3>
+                            <!-- <Button id="close" onclick="close()"> close</Button> -->
+                        </div>
+                        <div class="form-content">
+                            <div class="name_input">
+                                <input type="text" class="form-control" id="team_name" placeholder="Team Name">
+                            </div>
+                            <div class="select_input">
+                                <select id="selection" class="select_input" id="select-category">
+                                    <option selected> Category </option>
+                                    <option> Development Team </option>
+                                    <option> IT Team </option>
+                                    <option> Graphics Designer Team </option>
+                                </select>
+                            </div>
+                            <hr>
+                            <div class="member-name">
+
+                            <h3 id="add-member"> ADD MEMBERS </h3>
+                            <hr>
+                                <ul id="memberUl">
+                                    <li id="memberLi" class="memberLi">
+
+                                    </li>
+
+                                </ul>
+                                <button type="button" id="createBtn"> Create </button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Team Info Box -->
+            <div class="container" id="teamList">
+                <!-- <table>
+        <th></th>
+    </table> -->
+    
+                <div id="parentDiv">
+                    <div class="card" id="teambox">
+                        <h5 id="card_name" class="card_name">Team Name</h5>
+                        <h6> Members : <span> user1,user2,user3 </span></h6>
+                        <button id="details"> Details </button>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- Team info Box End  -->
+        </div>
+
+    </div>
+    </div>
+
+    
+
+    <script src="./teams_create.js">
+        // function close(){
+        //     let close = document.getElementById('close').style.display='none';
+        //     popup.classList.toggle('close')
+        //     alert('hello')
+        // }
+    </script>
+</body>
+
+</html>
