@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#2d85b7, #ae2d87);
+}
+.mainbox{
+    background-color: var(--background);
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: rgba(0,0,0,0.3) 0px 19px 38px;
+padding: 20px;
+}
+/*
+ .clockbox {
+    position: relative;
+    background-color: #FF00FF;
+    height: 220px;
+    width: 220px;
+    margin: 10px auto;
+    border-radius: 50%;
+} */
+/* .light{
+    transition: 1s;
+    --background: #fff;
+}
+.dark{
+    transition: 1s;
+    --background: #000;
+}
+.clockbox ::before{
+    content: '';
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    background-color: var(--background);
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.301);
+}
+.clockbox::after{
+    content: '';
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+}
+.min, .hr, .sec{
+    position: absolute !important;
+    transform: rotate(0deg) !important;
+    transform-origin: bottom center !important;
+}
+.min{
+    height: 100px;
+    width: 4px;
+    background-color: black;
+    margin: auto;
+    top: 5%;
+    left: 49%;
+    border-radius: 2%;
+}
+.hr{
+    height: 70px;
+    width: 5px;
+    background-color: black;
+    margin: auto;
+    top: 18%;
+    left: 49%;
+    border-radius: 2%;
+}
+.sec{
+    height: 110px;
+    width: 2px;
+    background-color: black;
+    top: 0%;
+    left: 49.5%;
+    border-radius: 2%;
+}
+.med{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    color: #FF00FF;
+    font-weight: bold;
+} */
+.light{
+    transition: 1s;
+    --background: #ddd;
+}
+.dark{
+    transition: 1s;
+    --background: #464646;
+}
+.mainBox{
+    width: 300px;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 20px;
+    background-color: var(--background);
+    border-radius: 20px;
+}
+.clockbox{
+    position: relative;
+    height: 220px;
+    width: 220px;
+    margin: 10px auto;
+    background-color: #FF00FF;
+    border-radius: 50%;
+}
+
+.clockbox::before{
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: var(--background);
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.301);
+}
+.clockbox::after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: black;
+}
+.min, .hr, .sec{
+    position: absolute;
+    transform: rotate(0deg);
+    transform-origin: bottom center;
+    border-radius: 10px;
+}
+.min{
+    height: 100px;
+    width: 4px;
+    background-color: black;
+    margin: auto;
+    top: 5%;
+    left: 49%;
+    border-radius: 2%;
+}
+.hr{
+    height: 70px;
+    width: 5px;
+    background-color: black;
+    margin: auto;
+    top: 18%;
+    left: 49%;
+    border-radius: 2%;
+}
+.sec{
+    height: 110px;
+    width: 2px;
+    background-color: black;
+    top: 0%;
+    left: 49.5%;
+    border-radius: 2px;
+}
+.med{
+    position: absolute;
+    bottom: 25px;
+    left: 45%;
+    color: #FF00FF;
+    font-weight: bold;
+}
+.digital{
+    text-align: center;
+    margin-top: 20px;
+    color: #FF00FF;
+    font-size: 20px;
+    font-weight: bold;
+}
+.locationinfo{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #FF00FF;
+}
+.basic .country{
+    font-size: 30px;
+    font-weight: bold;
+}
+.basic .day{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.mode{
+    color: yellow;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 30px;
+}

@@ -1,0 +1,124 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+.player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #2d85b7, #ae2d87);
+}
+.wrapper{
+    height: 500px;
+    background-color: #fff;
+    width: 300px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    box-shadow: rgba(0,0,0,0.3) 0px 19px 40px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.playing-pic{
+height: 220px;
+width: 220px;
+/* background-color: #000; */
+border-radius: 100%;
+margin: 20px;
+border: 2px solid #fff;
+background-size: cover;
+/* -moz-box-shadow: 0px 6px 6px #ccc;
+-webkit-box-shadow: 0px 6px 6px #ccc; */
+box-shadow: 0px 6px 6px #ccc;
+}
+.playing-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.song-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.song-artist{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.playing-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playingRange, .volumeRange{
+    appearance: none;
+    background-color: #83a9ff;
+    height: 5px;
+    transition: .2s;
+}
+.playingRange::-webkit-slider-thumb,
+.volumeRange::-webkit-slider-thumb
+{
+cursor: pointer;
+background: #fff;
+border: 3px solid #83a9ff;
+appearance: none;
+height: 15px;
+width: 15px;
+border-radius: 10px;
+}
+.playingRange{
+    width: 60%;
+}
+.volumeRange{
+    width: 30%;
+}
+.current-time, .song-time{
+padding: 5px;
+}
+.bi-volume-mute-fill, .bi-volume-up-fill{
+    padding: 10px;
+}
+
+
+
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* margin-bottom: -220px; */
+}
+
+.random-song, .prev-song, .play-song, .next-song, .replay-song{
+    padding: 20px;
+    opacity: 0.8;
+    color: #000;
+    font-size: 20px;
+    transition: opacity .2s;
+}
+i.bi-shuffle, i.bi-skip-backward-fill, i.bi-skip-forward-fill, i.bi-arrow-repeat, i.bi-play-circle-fill, i.bi-pause-circle-fill{
+    cursor: pointer;
+}
+.bi-volume-mute-fill, .bi-volume-up-fill{
+    padding: 10px;
+}
+
+
+
+.anime{
+    animation: rotatePlayer 3s linear infinite;
+}
+@keyframes rotatePlayer{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
